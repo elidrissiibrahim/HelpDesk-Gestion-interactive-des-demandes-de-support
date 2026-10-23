@@ -1,6 +1,6 @@
-const users = [{ titre: "Connexion Wi-Fi instable", categorie: "Réseau", priorite: "Haute", description: "Installer un logiciel sur le poste." },
-{ id: 1, titre: "Connexion Wi-Fi instable", categorie: "Réseau", priorite: "Haute", description: "Installer un logiciel sur le poste." },
-{ id: 2, titre: "Connexion Wi-Fi instable", categorie: "Réseau", priorite: "Haute", description: "Installer un logiciel sur le poste." }];
+const users = [{ titre: "Connexion Wi-Fi instable", categorie: "Materiel", priorite: "Haute", description: "Installer un logiciel sur le poste." },
+{ id: 1, titre: "Connexion Wi-Fi instable", categorie: "Reseau", priorite: "Haute", description: "Installer un logiciel sur le poste." },
+{ id: 2, titre: "Connexion Wi-Fi instable", categorie: "Reseau", priorite: "Haute", description: "Installer un logiciel sur le poste." }];
 
 modifier = false;
 let indexCarte;
@@ -48,6 +48,27 @@ function AffecherCart() {
     for (let i = 0; i < users.length; i++) {
         let cart = document.createElement("article");
         cart.className = "cart";
+
+        let headcart =document.createElement("div");
+            headcart.className ="headcart";
+        let numtecket = document.createElement("p");
+                numtecket.className ="tecket";
+                numtecket.textContent="HD-00"+(i+1);
+        let imagewifi = document.createElement("img");
+             imagewifi.className = "icons";
+             imagewifi.setAttribute("src", "assets/wifi.png");
+
+        let imagelogi = document.createElement("img");
+              imagelogi.className = "icons";
+              imagelogi.setAttribute("src", "assets/logiciel.png");
+             
+        let imagemater = document.createElement("img");
+            imagemater.className = "icons";
+            imagemater.setAttribute("src", "assets/material.webp");
+
+
+
+
         let carttitre = document.createElement('h2');
         carttitre.className = 'carttitre';
         carttitre.textContent = users[i].titre;
@@ -60,7 +81,6 @@ function AffecherCart() {
         categorie.className = "categorie";
         categorie.textContent = users[i].categorie;
         let priorite = document.createElement("h5");
-        priorite.className = "priorite";
         priorite.textContent = users[i].priorite;
         let buttonbox = document.createElement("div");
         buttonbox.className = "buttonbox";
@@ -73,7 +93,34 @@ function AffecherCart() {
         suprem.className = "btn-suprem";
         suprem.textContent = "supreme";
 
-
+        let catego = users[i].categorie;
+        switch (catego) {
+            case "Materiel" :
+            headcart.appendChild(imagemater);
+            break;
+            case "Reseau":
+                headcart.appendChild(imagewifi)
+                break;
+            case "Logiciels":
+                headcart.appendChild(imagelogi);
+                break;
+        }
+        let prio = users[i].priorite;
+        switch (prio) {
+            case "Haute":
+                priorite.className = "haute";
+                break;
+            case "Moyenne":
+                priorite.className = "moyenne";
+                break;
+            case "Basse":
+                priorite.className = "basse";
+                break;
+        }
+        
+        
+        headcart.appendChild(numtecket);
+        cart.appendChild(headcart);
         cart.appendChild(carttitre);
         cart.appendChild(description);
         boxproandcat.appendChild(categorie);
@@ -101,7 +148,7 @@ function AffecherCart() {
             modifier = true;
             indexCarte = i;
 
-        })
+        });
     }
     let demmand = document.getElementById("nbr-demandes");
     demmand.textContent = users.length + " demandes";

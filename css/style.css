@@ -27,60 +27,6 @@
     font-size: 14px;
     padding-bottom: 10px;
 }
-
-/* 
-
-
-.head-carts{
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px;
-    gap : 40px;
-}
-.sect-titel{
-    font-size: 16px;
-}
-#nbr-demandes{
-    background-color: rgba(235, 239, 244, 1);
-    color: rgba(92, 105, 123, 1);
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 10px;
-}
-
-.icon-cart {
-    background-color: rgba(37, 47, 62, 1);
-    height: 60px;
-    width: 60px;
-    border-radius: 5px;
-}
-.cart-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#cart-titel{
-}
-#Desc-cart{
-}
-.cat-and-prop{
-    display: flex;
-    justify-content: space-around;
-    margin: 15px;
-}
-#categorie-choix{
-    background-color: rgba(240, 243, 247, 1);
-    color: rgba(100, 116, 139, 1);
-    padding: 3px;
-    border-radius: 10px;
-}
-#priorite-choix{
-    background-color: rgba(255, 240, 232, 1);
-    color: rgba(186, 100, 68, 1);
-    padding: 3px;
-    border-radius: 10px;
-}
- */
 .button{
     display: flex;
     justify-content: end;
@@ -181,4 +127,39 @@ select{
     border-radius: 10px;
     padding: 5px;
     font-size: 10px;
+}
+.headcart{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.tecket{
+    color : rgba(153, 164, 178, 1);
+
+}
+.icons{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+.basse{
+    color :rgba(56, 136, 103, 1);
+    background-color: rgba(232, 246, 238, 1);
+    padding: 5px;
+    border-radius: 10px;
+}
+.moyenne{
+    color : rgba(166, 122, 43, 1);
+    background-color: rgba(255, 245, 223, 1);
+    padding: 5px;
+    border-radius: 10px;
+}
+.haute {
+    color: rgba(186, 100, 68, 1);
+    background-color: rgba(255, 240, 232, 1);
+    padding: 5px;
+    border-radius: 10px;
+}
+.boxproandcat{
+    margin: 10px;
 }
