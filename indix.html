@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiv.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="nav-bar">
+        <img class="header-image" src="assets/images/nav-bar-img.png" alt="logo de navbar helpdisck">
+        <img class="header-icon" src="assets/icons/menus.png" alt="">
+    </header>
+    <main>
+        <section>
+            <h2 class="title">
+                Gestion des demandes
+            </h2>
+            <p class="paragraph">
+                Suivez et gérez les incidents informatiques.
+            </p>
+
+        </section>
+
+        <section class="intro">
+            <div>
+
+
+                <div class="titredecree">
+                    <h3 class="title">Créer une demande</h3>
+                    <p class="paragraph">Décrivez votre problème informatique.</p>
+                </div>
+
+                <div class="formulair">
+
+                    <div>
+                        <label for="Titrepro">Titre du problème *</label><br>
+                        <input id="Titrepro" placeholder="Titre du problème">
+                    </div>
+
+                    <div>
+                        <label for="categorie">Catégorie *</label><br>
+                        <select id="categorie">
+                            <option value=""></option>
+                            <option value="Matériel (Hardware)">Matériel (Hardware)</option>
+                            <option value="Logiciels (Software)">Logiciels (Software)</option>
+                            <option value="Réseau">Réseau et Internet</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="priorite">Priorité *</label><br>
+                        <select id="priorite">
+                            <option value=""></option>
+                            <option value="Haute">Haute</option>
+                            <option value="Moyenne">Moyenne</option>
+                            <option value="Basse">Basse</option>
+                        </select>
+                    </div>
+
+                    <div class="descriptionin">
+                        <label for="discreption">Description *</label><br>
+                        <input id="description" placeholder="Décrivez votre problème...">
+                    </div>
+                </div>
+                <button class="bnt-ajoute" id="btn">＋ Ajouter la demande</button>
+        </section>
+            <div class="head-carts">
+                <h3 class="sect-titel">Liste des demandes</h3>
+                <h5 id="nbr-demandes"></h5>
+            </div>
+        <section id="les-articeles">
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
