@@ -27,10 +27,10 @@
     font-size: 14px;
     padding-bottom: 10px;
 }
-.button{
+.div-btn{
     display: flex;
     justify-content: end;
-    margin: 10px;
+    padding: 10px;
 }
 
 .cart{
@@ -84,6 +84,7 @@
     border-radius: 10px;
 }
 input{
+    width: 80%;
     border-radius: 6px;
     height: 44px;
     border: 1px solid black;
@@ -94,15 +95,14 @@ label{
     font-weight: 12px;
 }
 select{
+    width: 80%;
     border-radius: 6px;
     height: 44px;
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgb(15, 14, 14);
     margin: 10px;
 }
 .formulair{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px;
+    margin: 20px;
     padding: 15px;
     border-radius: 10px;
     background-color: white;
@@ -112,14 +112,11 @@ select{
     background-color: rgb(240, 237, 237);
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.15);
 }
-.descriptionin{
-    grid-column: 4fr;
-}
 .head-carts{
     display: flex;
     justify-content: flex-start;
     margin: 10px;
-    gap : 40px;
+    gap: 40px;
 }
 #nbr-demandes{
     background-color: rgba(235, 239, 244, 1);
@@ -162,4 +159,14 @@ select{
 }
 .boxproandcat{
     margin: 10px;
+}
+#les-articeles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.hero{
+    width: 100%;
 }

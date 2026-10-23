@@ -1,8 +1,32 @@
-/* @media (min-width : 425px ) and (max-width : 768px) {
+@media (min-width : 426px ) and (max-width : 768px) {
+.formulair{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 10px;
+    align-items: center;
+    justify-content: center;
+}
+#les-articeles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+}
+@media (min-width : 769px) {
 .formulair{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap : 20px;
     align-items: center;
 }
-} */
+#les-articeles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 5px;
+}
+.descriptionin{
+    display: grid;
+    grid-column: 1/5 fr;
+}
+}
